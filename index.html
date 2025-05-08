@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Star U</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6f4e37;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+    .dropdown button {
+      background-color: #8b5c42;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      min-width: 200px;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    section {
+      padding: 20px;
+      margin: auto;
+      max-width: 700px;
+    }
+    h2 {
+      text-align: center;
+      color: #6f4e37;
+    }
+    .tentang, .kontak {
+      background-color: #f6f0e8;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .menu-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 28%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.quantity {
+  margin: 10px 0;
+}
+
+.quantity button {
+  padding: 5px 10px;
+}
+
+.quantity input {
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.button-wa {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-wa:hover {
+  background-color: #1da851;
+}
+
+    .button-wa {
+      margin-top: 10px;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    ul {
+      text-align: left;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    footer {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    a {
+      color: #3366cc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Coffee Star U</h1>
+  <nav>
+    <div class="dropdown">
+      <button>Menu</button>
+      <div class="dropdown-content">
+        <a href="#menu">Menu Minuman & Makanan</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section id="menu">
+    <h2>Menu Minuman & Makanan</h2>
+  
+    <!-- Baris Minuman -->
+    <div class="menu-row">
+      <div class="menu-item">
+        <img src="espresso.jpeg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Rp 20.000</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="text" value="0" readonly>
+          <button>+</button>
+        </div>
+        <button class="button-wa">Pesan via WhatsApp</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="latte.jpeg" alt="Latte">
+        <h3>Caffè Latte</h3>
+        <p>Rp 25.000</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="text" value="0" readonly>
+          <button>+</button>
+        </div>
+        <button class="button-wa">Pesan via WhatsApp</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="macha.jpeg" alt="Matcha Latte">
+        <h3>Matcha Latte</h3>
+        <p>Rp 28.000</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="text" value="0" readonly>
+          <button>+</button>
+        </div>
+        <button class="button-wa">Pesan via WhatsApp</button>
+      </div>
+    </div>
+  
+    <!-- Baris Makanan -->
+    <div class="menu-row">
+      <div class="menu-item">
+        <img src="croissant.jpeg" alt="Croissant">
+        <h3>Croissant</h3>
+        <p>Rp 18.000</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="text" value="0" readonly>
+          <button>+</button>
+        </div>
+        <button class="button-wa">Pesan via WhatsApp</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="brownies.jpeg" alt="Brownies">
+        <h3>Brownies Cokelat</h3>
+        <p>Rp 22.000</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="text" value="0" readonly>
+          <button>+</button>
+        </div>
+        <button class="button-wa">Pesan via WhatsApp</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="cookie.jpeg" alt="Donat">
+        <h3>Cookie Coklat</h3>
+        <p>Rp 15.000</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="text" value="0" readonly>
+          <button>+</button>
+        </div>
+        <button class="button-wa">Pesan via WhatsApp</button>
+      </div>
+    </div>
+  </section>  
+
+<section id="tentang">
+  <h2>Tentang Coffee Star U</h2>
+  <div class="tentang">
+    <p><strong>Coffee Star U</strong> adalah tempat di mana cita rasa kopi premium bertemu dengan kenyamanan dan kehangatan suasana. Sejak berdiri pada tahun 2025, kami berkomitmen untuk menyajikan kopi terbaik dengan layanan yang ramah dan lingkungan yang menyenangkan.</p>
+    
+    <h3>Visi Kami</h3>
+    <p>Menjadi kafe pilihan utama bagi para pecinta kopi dan tempat favorit untuk bersantai, bekerja, maupun berkumpul bersama keluarga dan sahabat.</p>
+
+    <h3>Misi Kami</h3>
+    <ul>
+      <li>✔ Menghadirkan produk berkualitas dari biji kopi pilihan.</li>
+      <li>✔ Menyediakan suasana yang nyaman dan estetis.</li>
+      <li>✔ Memberikan pelayanan terbaik dan ramah pelanggan.</li>
+    </ul>
+
+    <h3>Layanan Kami</h3>
+    <p>Kami menyediakan beragam minuman kopi dan makanan ringan, serta layanan pemesanan online melalui WhatsApp. Semua disiapkan dengan standar kualitas tinggi dan disajikan oleh barista berpengalaman.</p>
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>Informasi Kontak</h2>
+  <div class="kontak">
+    <p><strong>Alamat:</strong> Jl. Duren sawit blok G4</p>
+    <p><strong>Telepon:</strong> <a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+    <p><strong>Email:</strong> <a href="mailto:coffeestarU@gmail.com">coffeestaru@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/syifasrfn_19" target="_blank">@syifasrfn_19</a></p>
+    <p><strong>Jam Operasional:</strong> Setiap hari, 08.00 - 22.00</p>
+    <p><strong>Owner:</strong> SYIFA FAUZIAH SARFINA</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Coffee Star U | Kopi dan Cemilan Lezat Setiap Hari
+</footer>
+
+</body>
+</html>
